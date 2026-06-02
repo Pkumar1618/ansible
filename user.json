@@ -1,0 +1,17 @@
+{
+    "Name" : "prashanth",
+    "Email" : "prashanthch943@gmail.com",
+    "Addresses" :
+    [ 
+        {
+            "type": "perm",
+            "Addresseline1": "Hyderabad",
+            "Addresseline2" : "Dilshuknagar"
+        },
+        {
+            "type": "current",
+            "Addresseline1": "Bangalore",
+            "Addresseline2" : "Adugodi"
+        }
+    ]
+}

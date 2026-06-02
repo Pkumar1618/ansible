@@ -1,0 +1,50 @@
+<students>
+    <student>
+        <student>prashanth</student>
+        <Email>prashanthch943@gmail.com</Email>
+        <Addresses>
+            <PermAddress>
+                <Address1>Hyderabad</Address1>
+                <Address2>Dilshuknagar</Address2>
+                <Street>prashanth nagar</Street>
+            </PermAddress>
+            <CurruentAddress>
+                <Address1>Banglore</Address1>
+                <Address2>Adugodi</Address2>
+                <Street>Ninjappa Layout</Street>
+            </CurruentAddress>
+        </Addresses>
+    </student>
+    <student>
+        <student>venkatesh</student>
+        <Email>venkatesh123@gmail.com</Email>
+        <Addresses>
+            <PermAddress>
+                <Address1>Hyderabad</Address1>
+                <Address2>Dilshuknagar</Address2>
+                <Street>prashanth nagar</Street>
+            </PermAddress>
+            <CurruentAddress>
+                <Address1>Banglore</Address1>
+                <Address2>Adugodi</Address2>
+                <Street>Ninjappa Layout</Street>
+            </CurruentAddress>
+        </Addresses>
+    </student>
+    <student>
+        <student>ravikumar</student>
+        <Email>ravikumar123@gmail.com</Email>
+        <Addresses>
+            <PermAddress>
+                <Address1>Hyderabad</Address1>
+                <Address2>Dilshuknagar</Address2>
+                <Street>prashanth nagar</Street>
+            </PermAddress>
+            <CurruentAddress>
+                <Address1>Banglore</Address1>
+                <Address2>Adugodi</Address2>
+                <Street>Ninjappa Layout</Street>
+            </CurruentAddress>
+        </Addresses>
+    </student>
+</students>

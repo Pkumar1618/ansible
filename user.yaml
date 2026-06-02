@@ -1,0 +1,36 @@
+
+- Name: prashanth
+  Email: prashanthch943@gmail.com
+  Addresses: #list of Addresses
+  - type: perm
+    Addresseline1: Prashanth Nagar
+    Addresseline2: Dilshuknagar
+    Addresseline3: Hyderabad
+  - type: current
+    Addresseline1: Ninjappa Layout
+    Addresseline2: Adugodi
+    Addresseline3: Bangalore
+
+- Name: venkatesh
+  Email: venkatesh123@gmail.com
+  Addresses: #list of Addresses
+  - type: perm
+    Addresseline1: Prashanth Nagar
+    Addresseline2: Dilshuknagar
+    Addresseline3: Hyderabad
+  - type: current
+    Addresseline1: Ninjappa Layout
+    Addresseline2: Adugodi
+    Addresseline3: Bangalore
+
+- Name: ravikumar
+  Email: ravikumar123@gmail.com
+  Addresses: #list of Addresses
+  - type: perm
+    Addresseline1: Prashanth Nagar
+    Addresseline2: Dilshuknagar
+    Addresseline3: Hyderabad
+  - type: current
+    Addresseline1: Ninjappa Layout
+    Addresseline2: Adugodi
+    Addresseline3: Bangalore
