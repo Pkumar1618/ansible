@@ -12,17 +12,13 @@
       ansible.builtin.debug:
         msg: "Hi I am learning {{ COURSE }}, DURATION is: {{ DURATION }}, TIMINGS is: {{ TIMINGS }}, TRAINER: {{ TRAINER }}"
 
-  tasks:
     - name: print the information again
-      vars: #task level varibles override the play level 
-        COURSE: "ansible"
+      vars:   #task level varibles override the play level 
+      COURSE: "ansible"
       ansible.builtin.debug:
         msg: "Hi I am learning {{ COURSE }}, DURATION is: {{ DURATION }}, TIMINGS is: {{ TIMINGS }}, TRAINER: {{ TRAINER }}"
 
-  tasks:
     - name: print the information again and again
       ansible.builtin.debug:
         msg: "Hi I am learning {{ COURSE }}, DURATION is: {{ DURATION }}, TIMINGS is: {{ TIMINGS }}, TRAINER: {{ TRAINER }}"
 
-
-    
