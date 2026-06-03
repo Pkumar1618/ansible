@@ -1,4 +1,5 @@
-
+#inheritance:
+#try to not change anything in source files. because we may have accidentally changes others so we have to maintain the the separate varible file.
 - name: variables from file
   hosts: web
 
