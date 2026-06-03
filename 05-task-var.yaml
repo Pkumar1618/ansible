@@ -1,3 +1,4 @@
+#inheritance:
 - name: variables to print
   hosts: web
 
