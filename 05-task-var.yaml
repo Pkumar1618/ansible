@@ -18,4 +18,11 @@
         COURSE: "ansible"
       ansible.builtin.debug:
         msg: "Hi I am learning {{ COURSE }}, DURATION is: {{ DURATION }}, TIMINGS is: {{ TIMINGS }}, TRAINER: {{ TRAINER }}"
+
+  tasks:
+    - name: print the information
+      ansible.builtin.debug:
+        msg: "Hi I am learning {{ COURSE }}, DURATION is: {{ DURATION }}, TIMINGS is: {{ TIMINGS }}, TRAINER: {{ TRAINER }}"
+
+
     
