@@ -2,40 +2,40 @@
 - name: Variables to print
   hosts: web
 
-  # vars:
-  #   COURSE: "DevOps with AWS From PLAY level"
-  #   DURATION: "120HRS"
-  #   TIMINGS: "MOR 12'O CLOCK"
-  #   TRAINER: "SHIVA"
+  vars:
+    COURSE: "DevOps with AWS From PLAY level"
+    DURATION: "120HRS"
+    TIMINGS: "MOR 12'O CLOCK"
+    TRAINER: "SHIVA"
   
-  # vars_files:
-  # - vars.yaml
+  vars_files:
+  - vars.yaml
 
-  # vars_prompt:
-  #   - name: COURSE
-  #     prompt: "Please enter the course"
-  #     private: false
+  vars_prompt:
+    - name: COURSE
+      prompt: "Please enter the course"
+      private: false
     
-  #   - name: DURATION
-  #     prompt: "Please enter the duration"
-  #     private: false
+    - name: DURATION
+      prompt: "Please enter the duration"
+      private: false
 
-  #   - name: TRAINER
-  #     prompt: "Please enter the trainer"
-  #     private: false
+    - name: TRAINER
+      prompt: "Please enter the trainer"
+      private: false
 
-  #   - name: TIMINGS
-  #     prompt: "Please enter course timings"
-  #     private: false
+    - name: TIMINGS
+      prompt: "Please enter course timings"
+      private: false
 
 
   tasks:
     - name: Print the information
       vars:
-        # COURSE: "DevOps with AWS From TASK level"
-        # DURATION: "120HRS"
-        # TIMINGS: "MOR 12'O CLOCK"
-        # TRAINER: "SHIVA"
+        COURSE: "DevOps with AWS From TASK level"
+        DURATION: "120HRS"
+        TIMINGS: "MOR 12'O CLOCK"
+        TRAINER: "SHIVA"
       ansible.builtin.debug:
         msg: Hi I am learning {{ COURSE }}, DURATION is {{ DURATION }}, TIMINGS is {{ TIMINGS }}, TRAINER {{ TRAINER }}
 
@@ -44,3 +44,4 @@
         #3. files
         #4. prompt
         #5. play level
+        #6. inventory
