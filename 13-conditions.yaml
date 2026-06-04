@@ -9,7 +9,7 @@
   - name: print this if less than 10
     ansible.builtin.debug:
       msg: "Given number {{ number }} is less than 10"
-    when: number | int < 10 # conditional expression
+    when: number | int < 10 # conditional expression it is | using for number (string) to consider has integer 
 
   - name: print this if greter than or equal to 10
     ansible.builtin.debug:
