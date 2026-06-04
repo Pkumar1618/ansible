@@ -8,25 +8,25 @@
     TIMINGS: "MOR 12'O CLOCK"
     TRAINER: "SHIVA"
   
-  vars_files:
-  - vars.yaml
+  # vars_files:
+  # - vars.yaml
 
-  vars_prompt:
-    - name: COURSE
-      prompt: "Please enter the course"
-      private: false
+  # vars_prompt:
+  #   - name: COURSE
+  #     prompt: "Please enter the course"
+  #     private: false
     
-    - name: DURATION
-      prompt: "Please enter the duration"
-      private: false
+  #   - name: DURATION
+  #     prompt: "Please enter the duration"
+  #     private: false
 
-    - name: TRAINER
-      prompt: "Please enter the trainer"
-      private: false
+  #   - name: TRAINER
+  #     prompt: "Please enter the trainer"
+  #     private: false
 
-    - name: TIMINGS
-      prompt: "Please enter course timings"
-      private: false
+  #   - name: TIMINGS
+  #     prompt: "Please enter course timings"
+  #     private: false
 
 
   tasks:
