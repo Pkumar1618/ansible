@@ -1,0 +1,37 @@
+192.168.251.243 { these are ungroups}
+192.168.251.245 { these are ungroups}
+192.168.251.245 { these are ungroups}
+
+[web]
+192.168.251.112 { these are grouped}
+
+
+[web:vars]
+
+COURSE="Ansible from inventory"
+DURATION="150HRS"
+TIMINGS="MOR 10'O CLOCK TO 11:30 CLOCK"
+TRAINER="SHIVA"
+
+[backend] {these are grouped}
+
+192.168.251.113 
+192.168.251.114
+192.168.251.115
+192.168.251.116
+
+[mysql] {these are grouped}
+
+192.168.251.117
+192.168.251.118
+192.168.251.119
+
+[server:children] { these are the group of groups}
+
+web
+backend
+
+[all:vars] { we can mention variables are apply to all group}
+ansible_user=prashanth
+ansible_password=prashanth
+
