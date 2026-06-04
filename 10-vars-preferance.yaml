@@ -7,6 +7,9 @@
     DURATION: "120HRS"
     TIMINGS: "MOR 12'O CLOCK"
     TRAINER: "SHIVA"
+  
+  vars_files:
+  - vars.yaml
 
   vars_prompt:
     - name: COURSE
@@ -38,3 +41,5 @@
 
         #1. args/command line
         #2. Task level
+        #3. prompt
+        #4. 
