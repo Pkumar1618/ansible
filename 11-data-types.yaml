@@ -1,6 +1,6 @@
 - name: Devops course information
   hosts: local
-  var:
+  vars:
     course: "DevOps with AWS" #string
     duration: 120HRS #int/float
     topics: #list
