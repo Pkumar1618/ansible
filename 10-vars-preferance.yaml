@@ -1,4 +1,5 @@
-- name: variables to print
+
+- name: Variables to print
   hosts: web
 
   vars:
@@ -6,26 +7,31 @@
     DURATION: "120HRS"
     TIMINGS: "MOR 12'O CLOCK"
     TRAINER: "SHIVA"
+
   vars_prompt:
-  - name: COURSE
-    prompt: please enter the course
-    private: false # if not confidential we can this
-  - name: DURATION
-    prompt: please enter the duration 
-    private: false
-  - name: TRAINER
-    prompt: please enter the trainer 
-    private: false
-  - name: TIMINGS
-    prompt: please enter course timings 
-    private: false
+    - name: COURSE
+      prompt: "Please enter the course"
+      private: false
+    
+    - name: DURATION
+      prompt: "Please enter the duration"
+      private: false
+
+    - name: TRAINER
+      prompt: "Please enter the trainer"
+      private: false
+
+    - name: TIMINGS
+      prompt: "Please enter course timings"
+      private: false
+
 
   tasks:
-    - name: print the information
+    - name: Print the information
       vars:
-        COURSE: "DevOps with AWS From PLAY task level"
+        COURSE: "DevOps with AWS From TASK level"
         DURATION: "120HRS"
         TIMINGS: "MOR 12'O CLOCK"
         TRAINER: "SHIVA"
       ansible.builtin.debug:
-        msg: "Hi I am learning {{ COURSE }}, DURATION is: {{ DURATION }}, TIMINGS is: {{ TIMINGS }}, TRAINER: {{ TRAINER }}"
+        msg: Hi I am learning {{ COURSE }}, DURATION is {{ DURATION }}, TIMINGS is {{ TIMINGS }}, TRAINER {{ TRAINER }}
