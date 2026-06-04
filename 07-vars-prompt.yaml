@@ -1,7 +1,7 @@
 #here we are taking variable through prompt
 - name: variables from prompt
   hosts: web
-  var_promts:
+  vars_prompt:
   - name: COURSE
     prompt: please enter the course
     private: false # if not confidential we can this
