@@ -1,63 +1,154 @@
 
 {
-  "virtualization_role": "guest",
-  "virtualization_type": "virtualbox",
-  "fips": false,
-  "system": "Linux",
-  "kernel": "5.15.0-139-generic",
-  "architecture": "x86_64",
-  "hostname": "ansible-node",
-  "fqdn": "ansible-node.myguest.virtualbox.org",
-  "distribution": "Ubuntu",
-  "distribution_version": "20.04",
-  "os_family": "Debian",
-  "python_version": "3.8.10",
-
-  "default_ipv4": {
-    "address": "192.168.251.112",
-    "gateway": "192.168.250.1",
-    "interface": "enp0s3",
-    "netmask": "255.255.254.0"
-  },
-
-  "memory_mb": {
-    "total": 7635,
-    "free": 4427,
-    "used": 3208
-  },
-
-"processor": {
-    "vcpus": 4,
-    "cores": 4,
-    "model": "Intel(R) Core(TM) i5-10400H CPU @ 2.60GHz"
-  },
-
-  "interfaces": [
-    "lo",
-    "enp0s3"
-  ],
-
-  "mounts": [
-    {
-      "mount": "/",
-      "device": "/dev/sda5",
-      "fstype": "ext4",
-      "size_total": 25710301184,
-      "size_available": 14165680128
+  "system": {
+    "hostname": "ansible-node",
+    "fqdn": "ansible-node.myguest.virtualbox.org",
+    "domain": "myguest.virtualbox.org",
+    "os": {
+      "distribution": "Ubuntu",
+      "version": "20.04.6 LTS",
+      "codename": "focal",
+      "family": "Debian",
+      "kernel": "5.15.0-139-generic",
+      "kernel_version": "#149~20.04.1-Ubuntu SMP Wed Apr 16 08:29:56 UTC 2025",
+      "architecture": "x86_64"
     },
-    {
-      "mount": "/boot/efi",
-      "device": "/dev/sda1",
-      "fstype": "vfat",
-      "size_total": 535805952,
-      "size_available": 535801856
+    "virtualization": {
+      "role": "guest",
+      "type": "virtualbox",
+      "vendor": "innotek GmbH",
+      "product_name": "VirtualBox",
+      "product_version": "1.2",
+      "product_uuid": "c78fafa2-ffb2-1b4c-b4cc-b6854f64fa21"
     }
+  },
 
-],
+  "hardware": {
+    "cpu": {
+      "model": "Intel(R) Core(TM) i5-10400H CPU @ 2.60GHz",
+      "cores": 4,
+      "vcpus": 4,
+      "threads_per_core": 1
+    },
+    "memory": {
+      "total_mb": 7635,
+      "used_mb": 3208,
+      "free_mb": 4427
+    },
+    "swap": {
+      "total_mb": 1162,
+      "used_mb": 0,
+      "free_mb": 1162
+    }
+  },
 
-  "date_time": {
+  "network": {
+    "default_interface": "enp0s3",
+    "gateway": "192.168.250.1",
+    "dns": [
+      "127.0.0.53"
+    ],
+    "interfaces": {
+      "enp0s3": {
+        "type": "ethernet",
+        "mac": "08:00:27:9a:6a:80",
+        "ipv4": "192.168.251.112",
+        "netmask": "255.255.254.0",
+        "network": "192.168.250.0/23",
+        "speed_mbps": 1000,
+        "status": "up"
+      },
+      "lo": {
+        "ipv4": "127.0.0.1",
+        "ipv6": "::1"
+      }
+    }
+  },
+
+  "storage": {
+    "disk": {
+      "device": "/dev/sda",
+      "model": "VBOX HARDDISK",
+      "size_gb": 25
+    },
+    "partitions": [
+      {
+        "device": "/dev/sda1",
+        "size": "512 MB",
+        "mount": "/boot/efi",
+        "filesystem": "vfat"
+      },
+      {
+        "device": "/dev/sda5",
+        "size": "24.5 GB",
+        "mount": "/",
+        "filesystem": "ext4",
+        "uuid": "a74be3a1-c615-4d76-bdae-75634c241470"
+      }
+    ],
+    "root_filesystem": {
+      "mount": "/",
+      "total_bytes": 25710301184,
+      "available_bytes": 14165680128,
+      "used_percent": 44.9
+    }
+  },
+
+  "security": {
+    "apparmor": "enabled",
+    "selinux": "not_installed",
+    "fips": false
+  },
+
+  "python": {
+    "version": "3.8.10",
+    "implementation": "CPython",
+    "executable": "/usr/bin/python3"
+  },
+
+  "users": {
+    "current_user": "root",
+    "uid": 0,
+    "gid": 0,
+    "home": "/root",
+    "shell": "/bin/bash",
+    "sudo_user": "prashanth"
+  },
+
+  "boot": {
+    "boot_image": "/boot/vmlinuz-5.15.0-139-generic",
+    "root_uuid": "a74be3a1-c615-4d76-bdae-75634c241470",
+    "options": [
+      "ro",
+      "quiet",
+      "splash"
+    ]
+  },
+
+  "services": {
+    "service_manager": "systemd",
+    "package_manager": "apt"
+  },
+
+  "time": {
     "date": "2026-06-05",
     "time": "14:39:40",
-    "timezone": "IST"
+    "timezone": "IST",
+    "utc_offset": "+0530",
+    "epoch": 1780650580
+  },
+
+  "uptime": {
+    "seconds": 63819,
+    "hours": 17.73
+  },
+
+  "ansible": {
+    "facts_gathered": true,
+    "gather_subset": [
+      "all"
+    ],
+    "module_setup": true,
+    "discovered_python": "/usr/bin/python3"
   }
 }
