@@ -1,0 +1,63 @@
+
+{
+  "virtualization_role": "guest",
+  "virtualization_type": "virtualbox",
+  "fips": false,
+  "system": "Linux",
+  "kernel": "5.15.0-139-generic",
+  "architecture": "x86_64",
+  "hostname": "ansible-node",
+  "fqdn": "ansible-node.myguest.virtualbox.org",
+  "distribution": "Ubuntu",
+  "distribution_version": "20.04",
+  "os_family": "Debian",
+  "python_version": "3.8.10",
+
+  "default_ipv4": {
+    "address": "192.168.251.112",
+    "gateway": "192.168.250.1",
+    "interface": "enp0s3",
+    "netmask": "255.255.254.0"
+  },
+
+  "memory_mb": {
+    "total": 7635,
+    "free": 4427,
+    "used": 3208
+  },
+
+"processor": {
+    "vcpus": 4,
+    "cores": 4,
+    "model": "Intel(R) Core(TM) i5-10400H CPU @ 2.60GHz"
+  },
+
+  "interfaces": [
+    "lo",
+    "enp0s3"
+  ],
+
+  "mounts": [
+    {
+      "mount": "/",
+      "device": "/dev/sda5",
+      "fstype": "ext4",
+      "size_total": 25710301184,
+      "size_available": 14165680128
+    },
+    {
+      "mount": "/boot/efi",
+      "device": "/dev/sda1",
+      "fstype": "vfat",
+      "size_total": 535805952,
+      "size_available": 535801856
+    }
+
+],
+
+  "date_time": {
+    "date": "2026-06-05",
+    "time": "14:39:40",
+    "timezone": "IST"
+  }
+}
