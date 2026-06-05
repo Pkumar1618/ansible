@@ -1,0 +1,27 @@
+
+- name: packages install
+  hosts: web
+  become: yes
+
+  tasks:
+    - name: installing packages (RedHat)
+      ansible.builtin.package:
+        name: "{{ item.name }}"
+        state: "{{ item.state }}"
+      loop:
+        - { name: "mysql-server", state: "absent" }
+        - { name: "nginx", state: "present" }
+        - { name: "postfix", state: "absent" }
+        - { name: "httpd", state: "present" }
+      when: ansible_os_family == "RedHat"
+
+    - name: installing packages (Debian)
+      ansible.builtin.package:
+        name: "{{ item.name }}"
+        state: "{{ item.state }}"
+      loop:
+        - { name: "mysql-server", state: "absent" }
+        - { name: "nginx", state: "present" }
+        - { name: "postfix", state: "absent" }
+        - { name: "apache2", state: "present" }
+      when: ansible_os_family == "Debian"
