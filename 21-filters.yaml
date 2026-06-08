@@ -30,6 +30,7 @@
     ansible.builtin.debug:
       msg: "Min: {{ numbers | min}}, Max: {{ numbers | max }}"  
 
+  
   - name: convert map to list
     vars:
       course:
@@ -37,7 +38,7 @@
         duration: "120HRS"
         trainer: "SHIVA"
     ansible.builtin.debug:
-      msg: "{{ course | dict2list }}"
+      msg: "{{ course | dict2items }}"
 
   - name: convert list to map
     vars:
