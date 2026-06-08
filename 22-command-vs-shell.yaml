@@ -1,4 +1,4 @@
-- name: command vs Shell
+- name: command vs shell
   hosts: local
   connection: local
   tasks: 
