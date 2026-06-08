@@ -2,9 +2,9 @@
 - name: command vs shell
   hosts: localhost
   connection: local
-
   tasks:
     - name: execute the shell
       ansible.builtin.shell: "ls -ltr > /tmp/output.txt"
+
 
 
