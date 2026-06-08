@@ -4,4 +4,4 @@
 
   tasks:
   - name: execute the shell
-    ansible.builtin.shell: ls -ltr > /tmp/output.txt
+    ansible.builtin.shell: ls -ltr &gt; /tmp/output.txt
