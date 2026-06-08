@@ -49,6 +49,6 @@
 
   - name: check ip address 
     vars: 
-      myip: "192.168.250.247"
+      myip: "192.168.250.161"
     ansible.builtin.debug:
       msg: "{{ myip | ansible.utiles.ipv6 }}"
