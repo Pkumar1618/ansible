@@ -47,7 +47,7 @@
       - { "key": "duration","value": "120HRS" }
       - { "key": "trainer","value": "SHIVA" }
     ansible.builtin.debug:
-      msg: "{{ course | list2dict }}"
+      msg: "{{ course | lists2dict }}"
   
   - name: check ip address 
     vars: 
