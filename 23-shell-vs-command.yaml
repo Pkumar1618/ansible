@@ -5,8 +5,12 @@
     - name: execute the shell
       ansible:builtin.shell: "ls -ltr > /tmp/ouput.txt" #login to the server and execute command inside but command module is just issues command. command line secure than shell.
 
+    - name: check teh process
+      ansible.builtin.shell: ps -ef | grep ssh
+      register: output
+
     - name: check the process
-      ansible.builtin.debug: ps -ef | grep ssh
+      ansible.builtin.command: ps -ef | grep ssh
       register: ouput
 
 
