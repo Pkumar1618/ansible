@@ -3,7 +3,7 @@
   connection: local
   tasks:
     - name: execute the shell
-      ansible:builtin.shell: "ls -ltr > /tmp/ouput.txt" #login to the server and execute command inside but command module is just issues command.
+      ansible:builtin.shell: "ls -ltr > /tmp/ouput.txt" #login to the server and execute command inside but command module is just issues command. command line secure than shell.
 
 
 
